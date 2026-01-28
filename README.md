@@ -136,3 +136,43 @@ Les admins sys doivent egalement proteger les informations dans les paquets tran
     Confidentialite - seuls les destinataires prevus et autorises peuvent acceder aux donnes et les lire
     Integrite - les donnes n'ont pas ete modifie avant l'arrive
     Disponibilite - acces rapide et fluide aux services de donnees pour les users autorises
+
+# BYOD (Bring Your Own Device)
+
+BYOD donne aux user finaux la liberte d'utiliser leurs propres appareil pour se acceder aux informations et communiquer a travers un reseau d'entreprise ou de campus. Le BYOD c'est pour tout type d'appareil
+
+# Collaboration en ligne
+
+Les users souhaitent se connecter au reseau pour avoir acces aux donnees mais aussi pour collaborer 
+
+# Communication video
+
+La video est essentielle a l'effort de communication et de collaboration. Toute personne disposant d'une connexion internet peut faire un appel video, quel que soit l'endroit
+
+# Cloud Computing 
+
+Un des moyens de acceder aux donnees et de les stocker. Le cloud computing nous permet de stocker des fichiers personnels, et meme un disque entier sur des serveurs via l'internet. Des applications comme le traitement de texte et l'edition de photos sont sur le cloud
+
+Pour les entreprise le cloud offre de nouvelles fonctionnalites sans devoir investir dans l'infrastructure, changer le staff, ni acheter des licenses.
+
+Le cloud computing fonctionne grace aux centres de donnes qui hebergent les systemes informatiques et les composants associes. Souvant les grandes entreprises ont leur propre data center pour les user alors que les petites entreprises se le permettent pas, du coup en louant des services de serveur cela peut baisser le cout total de possession (TCO)
+
+Pour des raisons de securite, tolerences aux pannes et fiabilites les donnees sont stockes dans des data center distribues.
+
+Il existe 4 types de cloud differents:
+    Les cloud publics
+    Les cloud prives
+    Les cloud hybrides
+    Les cloud communautaires
+
+Voici un tableau avec les 4 d'expliques:
+
+<figure><img src="./image copy.png"><figcaption></figcaption></figure>
+
+# Tendances technologiques domestiques
+
+Les tendances technologiques affectent aussi notre vie au quotidien comme les aspects de la maison, on appelle ca les "technologies domestiques intelligentes"
+
+Cette technologie s'integre dans les appareils menagers quotidiens qui peuvent ensuite se connecter a d'autres appareils pour les rendre "intelligent" ou automatises. Ex: un four qui fait chauffer la nourriture a l'heure indique sur notre calendrier et qui nous envoie un message par la suite
+
+<figure><img src="./image-1.png"><figcaption></figcaption></figure>
