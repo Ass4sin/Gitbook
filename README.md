@@ -112,7 +112,7 @@ La mise en place d'un reseau a commutation de paquets est un des moyens avec leq
 
 ## Evolutivite
 
-Un reseau evolutif se base sur le fait qu'on peut facilement ajouter un nouvel appareil au reseau sans **perturber** les anciens users
+Un reseau evolutif se base sur le fait qu'on peut facilement ajouter un nouvel appareil au reseau sans **perturber** les anciens users. En outre, les reseaux sont evolutifs etant donne que les concepteurs font appel a des normes et a des protocoles reconnus.
 
 ## Quality of Service (QoS)
 
@@ -122,5 +122,17 @@ Un encombrement survient lorsqu'une demande excessive de bande passante depasse 
 
 Lorsque le volume du trafic est superieur a ce qui peut etre transmis les appareils gardent les paquets en memoire jusqu'a ce que des ressources soit disponibles pour les transmettre
 
-# **MISSING IMAGE, CHECK VSCODE**
 <figure><img src=".gitbook/assets/QoS.png" alt=""><figcaption></figcaption></figure>
+
+## Securite du reseau
+
+L'infrastructure reseau, les services et les donnees stockees sur les peripheriques sont des actifs personnelles et professionnels essentiels. Les admin sys doivent s'ocuper de la securite du reseau et de la securite des informations
+
+La securisation de l'infrastructure comprend la securisation physique des peripheriques et de la prevention de l'acces non autorise aux logiciels de gestion qui y resident
+
+<figure><image src="./image.png"><figcaption></figcaption></figure>
+
+Les admins sys doivent egalement proteger les informations dans les paquets transmis sur le reseau ainsi que les informations stockees sur les peripheriques connectes au reseau, pour cela on a 3 criteres:
+    Confidentialite - seuls les destinataires prevus et autorises peuvent acceder aux donnes et les lire
+    Integrite - les donnes n'ont pas ete modifie avant l'arrive
+    Disponibilite - acces rapide et fluide aux services de donnees pour les users autorises
