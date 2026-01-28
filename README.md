@@ -122,4 +122,5 @@ Un encombrement survient lorsqu'une demande excessive de bande passante depasse 
 
 Lorsque le volume du trafic est superieur a ce qui peut etre transmis les appareils gardent les paquets en memoire jusqu'a ce que des ressources soit disponibles pour les transmettre
 
+# **MISSING IMAGE, CHECK VSCODE**
 <figure><img src=".gitbook/assets/QoS.png" alt=""><figcaption></figcaption></figure>
