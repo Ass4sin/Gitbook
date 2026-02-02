@@ -245,3 +245,9 @@ Si une commande est complexe on peut la voir explique comme ceci:
 <figure><img src="./image-4.png"><figcaption></figcaption></figure>
 
 <figure><img src="./image-5.png"><figcaption></figcaption></figure>
+
+# Modes de commandes principaux
+
+<figure><img src="./image-56.png"><figcaption></figcaption></figure>
+
+Il y a aussi **configure terminal**
