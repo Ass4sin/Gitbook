@@ -175,4 +175,73 @@ Les tendances technologiques affectent aussi notre vie au quotidien comme les as
 
 Cette technologie s'integre dans les appareils menagers quotidiens qui peuvent ensuite se connecter a d'autres appareils pour les rendre "intelligent" ou automatises. Ex: un four qui fait chauffer la nourriture a l'heure indique sur notre calendrier et qui nous envoie un message par la suite
 
-<figure><img src="./image-1.png"><figcaption></figcaption></figure>
+<figure><img src="./Screenshot 2026-01-28 at 20.14.03.png"><figcaption></figcaption></figure>
+
+# Haut debit sans fil
+
+Dans les zones ou le cable ou le DSL ne passent pas on peut se connecter en sans fil pour etablir une connexion
+
+Un fournisseur de services internet sans fil (WISP) est un fournisseur qui connecte les abonnes a un point d'access ou un point d'acces en utilisant des technologies sans fil similaires a celles que l'on trouve dans des reseaux locaux sans fil (WlAN)
+
+Pour le haut debit sans fil on installe une antennte a l'exterieur de la maison ou de la petite entreprise, dans de nombreseus regions cela commence a concurrencer la tech DSL et le cable
+
+# Menaces de securite 
+
+La sécurisation d'un réseau implique des protocoles, des technologies, des dispositifs, des outils et des techniques afin de protéger les données et d'atténuer les menaces. Ces risques ou menaces peuvent être externes ou internes. De nos jours, de nombreuses menaces externes pour la sécurité des réseaux proviennent de l'internet.
+
+Il existe plusieurs menaces externes courantes pour les réseaux :
+
+    • Virus, vers, et chevaux de Trois - logiciels malveillants et code arbitraire s'exécutant sur un périphérique utilisateur.
+    • Spyware et adware - Ce sont des types de logiciels qui sont installés sur l'appareil d'un utilisateur. Le logiciel recueille alors secrètement des informations sur l'utilisateur.
+    • Attaques du jour zéro - Appelées aussi attaques de l'heure zéro, elles se produisent le premier jour où une vulnérabilité est connue.
+    • Attaques des acteurs de menace - Une personne malveillante attaque les appareils des utilisateurs ou les ressources du réseau.
+    • Attaques par déni de service - Ces attaques ralentissent ou bloquent les applications et les processus sur un périphérique réseau.
+    • Interception et vol de données - Cette attaque permet de capturer des informations privées sur le réseau d'une organisation.
+    • Usurpation d'identité - Cette attaque consiste à voler les identifiants de connexion d'un utilisateur afin d'accéder à des données privées.
+
+Faut aussi faire gaffe des menaces internes car la pluspart du temps les employes savent pas utiliser un peripherique, perte ou vol d'un peripherique, etc..
+
+# Solutions de securite
+
+La securite se fait sur plusieurs couches. Pour la mise en place de la securite sur un reseau domestique c'est plutot simple, on l'implemente sur les appareils terminaux ainsi qu'au point d'acces a l'internet 
+
+Les elements de base de la securite d'un reseau domestique ou d'un petit bureau:
+    Antivirus et antispyware
+    Filtrage par pare-feu
+
+Alors que pour la securite d'une entreprise est constitue de nombreux composants integres dans le reseau, on a un antivirus, antispyware et un filtrage par pare-feu en meme temps en plus des composants ajoutes
+    **Systemes de pare-feu dedies** : ils offrent de firewall plus avancees 
+    Liste de controle d'acces (ACL) : filtrage par IP
+    **Systeme de prevention des intrusion (IPS)** : Ils identifient les menaces qui se repandent vite comme les attaques zero day
+    **Reseaux prives virtuel (VPN)** : Ils offrent une connexion a distance securise
+
+# Acces a Cisco IOS
+
+# Methode d'acces
+
+Un commutatuer transmet le traffic par defaut et n'a pas forcement besoin d'etre configure, c'est pour cela que 2 pc configures connectes au meme nouveau commutateur vont pouvoir communiquer
+
+Tous les commutatuers doivent etre configures et securises.
+
+<figure><img src="./image copy.png"><figcaption></figcaption></figure>
+
+# Programmes d'emulation de terminal 
+
+    PuTTY
+    Tera Term
+    SecureCRT
+
+# Verification de la syntaxe des commandes IOS
+
+<figure><img src="./image-2.png"><figcaption></figcaption></figure>
+
+Si une commande est complexe on peut la voir explique comme ceci:
+
+<figure><img src="./image-3.png"><figcaption></figcaption></figure>
+
+
+# Raccourcis IOS
+
+<figure><img src="./image-4.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-5.png"><figcaption></figcaption></figure>
