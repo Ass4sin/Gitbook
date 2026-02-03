@@ -251,3 +251,66 @@ Si une commande est complexe on peut la voir explique comme ceci:
 <figure><img src="./image-56.png"><figcaption></figcaption></figure>
 
 Il y a aussi **configure terminal**
+
+# Noms des peripheriques
+
+Il faut donner un nom logique aux peripheriques, pour cela on a des directives:
+    Commence par une lettre
+    Pas d'espace
+    Se termine par une lettre ou un chiffre
+    Ne comporte que des lettres,chiffres ou tirets
+    Comporte moins de 64 caracteres
+
+Pour donner un nom on doit etre en **conf t** 
+La commande est **hostname { nom }**
+
+# Configurer les mots de passe
+
+On doit securiser la connexion d'execution utilisateur et Telnet avec un mdp
+
+On a aussi des regles pour les mdp :
+    + de 8 caracteres
+    Une combinaison de lettres, chiffres, minuscules, majuscules, caracteres speciaux, etc...
+    Ne pas utiliser le meme mdp sur tous les peripheriques intermediaires
+    Ne pas utiliser des mots simples a deviner
+
+On doit aller en **conf t** pour securiser le mode d'execution utilisateur, puis dans la configuration de la console de ligne avec la commande **line console 0**. Le 0 sert a representer la premiere (et souvent la seule) interface de console. Ensuite on fait **password {password}** afin d'activer l'acces d'execution utilisateur a l'aide la commande login.
+
+Pour securiser le mode privilegie on sera toujours en conf t et on uitilisera la commande **enable secret {password}**. Ici il y a pas besoin de faire login
+
+Les lignes VTY (virtual terminal) activent l'acces a distance Telnet ou SSH. Souvent c'est de 0 a 15
+
+Cette fois ci on utilise la commande **vty 0 15**. Puis comme le mode d'execution utilisateur on utilisera password puis login.
+
+# Chiffrer les mots de passe
+
+Les fichiers startup-config et running-config affichent la pluspart des mdp en clair.
+Pour les chiffrer on sera en **conf t** et on utilise **service password-encryption**
+
+C'est un chiffrement simple pour tous les mdp pas chiffres.
+
+On peut utiliser la commande **show running-config** pour verifier
+
+# Message de banniere
+
+Le message de banniere sert a dire qu'un peripherique est utilisable que par certaines personnes, c'est tres important de faire ce message.
+
+Pour creer une banniere MOTD (Message Of The Day) on doit etre en **conf t** et utiliser la commande **banner motd #{message}#**. Le # sert a delimiter le message
+
+# Fichiers de config
+
+Deux fichiers systemes stockent la config des peripheriques:
+    startup-config : C'est le fichier stocke dans le NVRAM (memoire vive non volative). Ca contient toutes les commandes qui seront utilises au demarrage ou au redemarrage. La NVRAM ne perd pas son contenu lors de la mise hors tension du peripherique.
+    running-config : C'est stocke dans la memoire vive (RAM). Il reflete la config actuelle. La RAM perd tout son contenu lorsque le peripherique est mis hors tension ou redemarre.
+
+Pour enregistrer les modifications apportes a la config en cours dans le fichier de config initiale, la commande **copy running-config startup-config** sera utilise.
+
+# Modifier la config en cours
+
+Si les modifications n'ont pas l'effet souhaite et que la config n'est pas enregistree, on peut restaurer le peripherique avec la commande **reload**. En utilisant reload le peripherique est hors ligne.
+
+Des fois on doit supprimer le startup-config si c'est deja enregistree on peut utiliser la commande **erase startup-config**
+
+{% hint style="info" %}
+IPv6 utilise DHCPv6 et SLAAC (configuration automatique d'adresses sans etat) pour l'allocation dynamique d'adresses.
+{% endhint %}
