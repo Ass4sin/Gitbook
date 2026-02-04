@@ -314,3 +314,15 @@ Des fois on doit supprimer le startup-config si c'est deja enregistree on peut u
 {% hint style="info" %}
 IPv6 utilise DHCPv6 et SLAAC (configuration automatique d'adresses sans etat) pour l'allocation dynamique d'adresses.
 {% endhint %}
+
+# Configuration de l'interface de commutateur virtuelle
+
+Pour accéder à distance au commutateur, une adresse IP et un masque de sous-réseau doivent être configurés sur l'interface **SVI**. Pour configurer une SVI sur un commutateur, utilisez la commande de configuration globale interface vlan 1 . Vlan 1 n'est pas une interface physique réelle mais une **interface virtuelle**. Attribuez ensuite une adresse IPv4 à l'aide de la commande de configuration d'interface ip address ip-address subnet-mask. Enfin, activez l'interface virtuelle à l'aide de la commande de configuration d'interface no shutdown .
+
+Une fois ces commandes configurées, le commutateur dispose de tous les éléments IPv4 adaptés pour la communication sur le réseau.
+
+{% hint style="info" %}
+Utilisez la commande **show ip interface brief** pour afficher l'adresse IP et l'état de tous les ports et les interfaces des commutateurs
+{% endhint %}
+
+**La structure d'une adresse IPv4 est appelee "notation decimale a point" et est composee de quatre nombres decimaux compris entre 0 et 255**
