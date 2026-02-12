@@ -248,7 +248,7 @@ Si une commande est complexe on peut la voir explique comme ceci:
 
 # Modes de commandes principaux
 
-<figure><img src="./image-56.png"><figcaption></figcaption></figure>
+<figure><img src="./image-6.png"><figcaption></figcaption></figure>
 
 Il y a aussi **configure terminal**
 
@@ -326,3 +326,141 @@ Utilisez la commande **show ip interface brief** pour afficher l'adresse IP et l
 {% endhint %}
 
 **La structure d'une adresse IPv4 est appelee "notation decimale a point" et est composee de quatre nombres decimaux compris entre 0 et 255**
+
+# Notions sur les bases de communications
+
+Trois elements en commun peu importe la methode :
+    Source du message (expediteur)
+    Destination du message (destinataire)
+    Canal - Il s'agit du support qui assure le cheminement du message de sa source a la destination
+
+# Definition des regles
+
+{% hint style="info" %}
+Les regles sont les protocoles
+{% endhint %}
+
+Les protocoles doivent respecter certaines regles pour bien trasmettre un message: 
+    L'identification du destinataire de et l'expediteur
+    L'utilisation d'une langue et d'une syntaxe communes 
+    La vitesse et le rythme d'elocution
+    La demande de confirmation ou d'accuse de reception
+
+# Exigences Relatives au Protocole de Réseau
+
+Les protocoles utilisés dans le cadre des communications réseau partagent bon nombre de ces caractéristiques fondamentales. En plus d'identifier la source et la destination, les protocoles informatiques et réseau définissent la manière dont un message est transmis sur un réseau.
+Les protocoles informatiques communs comprennent les exigences suivantes :
+
+    • Codage des messages
+    • Format et encapsulation des messages
+    • La taille du message
+    • Synchronisation des messages
+    • Options de remise des messages
+
+# Codage des messages
+
+Pour envoyer un message il faut d'abord le coder. Le codage est la conversion des infos vers un autre format acceptable, a des fins de transmission. Le decodage inverse le processus pour lire l'information
+
+# Format et encapsulation des messages
+
+Le message envoye doit suivre une structure ou un format specifique. Les formats dependent du canal utilise pour transmettre le message 
+
+<figure><img src="./image-7.png"><figcaption></figcaption></figure>
+
+Tout comme l'envoi d'une lettre, un message qui est envoyé sur un réseau informatique suit des règles de format spécifiques pour sa livraison et son traitement.
+
+Internet Protocol (IP) est un protocole avec une fonction similaire à l'exemple d'enveloppe. Dans la figure, les champs du paquet IPv6 (Internet Protocol version 6) identifient la source du paquet et sa destination. IP est responsable de l'envoi d'un message de la source du message vers la destination sur un ou plusieurs réseaux.
+
+# Taille des messages
+
+Les trames trop longues ou trop courtes ne sont pas transmises.
+Un message long est envoye en plusieurs trames contenant chacune un fragement du message. Chaque trame possede aussi ses informations d'adressage. Au niveau de l'hote destinataire, les differents morceaux du message sont reconstruits de maniere a recomposer le message d'origine
+
+# Synchronisation des messages
+
+Controle de flux - processus de gestion de la vitesse de transmission des donnees. Le controle de flux definit la quantite d'informations qui peuvent etre envoyes et a quelle vitesse
+
+Delai de reponse - C'est comme une personne qui pose une question et n'a pas de reponse du coup ell reagit en consequence. La question peut etre repete, ou passer a autre chose, etc..
+
+La methode d'acces - C'est comme 2 personnes qui parlent en meme temps et ne se comprennent pas, lorsque un peripherique veut transmettre un message sur un reseau sans fil la carte d'interface reseau WLAN (NIC) doit determiner si le support sans fil est dispo
+
+# Modes de transmission de message
+
+Monodiffusion - A une seule personne
+Multidiffusion - A plusieurs personnes choisi
+Diffusion - A tout le monde
+
+
+**A REVOIR 3.2 LES PROTOCOLES**
+
+# Suites de protocoles
+
+<figure><img src="./image-8.png"><figcaption></figcaption></figure>
+
+# Exemples de protocole TCP/IP
+
+Les protocoles TCP/IP sont dispo pour les couches application, transport et internet. Il y en a pas pour la couche d'acces reseau. Les protocoles LAN de couche d'acces reseau les plus courants son Ethernet et WLAN (LAN sans fil). Les protocoles de la couche d'acces reseau sont responsable de la remise du paquet IP sur le support physique
+
+<figure><img src="./image-9.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-10.png"><figcaption></figcaption></figure>
+
+SLAAC - Methode qui permet au peripherique d'avoir son adresse IPv6 sans utiliser un serveur DHCPv6
+SMTP - Protocol de Transfert de Courrier Simple 
+POP3 - Protocole de la Poste v3
+IMAP - Protocole d'Acces aux Messages Internet. 
+
+ICMPv4 - Protocole de message de contrôle Internet pour IPv4. Fournit un retour d'information d'un hôte de destination à un hôte source sur les erreurs de livraison de paquets.
+• ICMPv6 - ICMP pour IPv6. Fonctionnalité similaire à ICMPv4, mais elle est utilisée pour les paquets IPv6.
+• ICMPv6 ND - Détection de voisin ICMPv6. Inclut quatre messages de protocole utilisés pour la résolution d'adresses et la détection d'adresses en double.
+
+• OSPF - Ouvrez d'abord le chemin le plus court. Protocole de routage d'état de liaison qui utilise une conception hiérarchique basée sur des zones. Il s'agit d'un protocole de routage interne standard ouvert.
+• EIGRP - Protocole de routage amélioré des passerelles intérieures. Protocole de routage propriétaire de Cisco qui utilise une métrique composite basée sur la largeur de bande, le délai, la charge et la fiabilité.
+• BGP - Protocole de passerelle frontalière. Un protocole de routage de passerelle extérieure standard ouvert utilisé entre les fournisseurs de services Internet (ISPs). Le protocole BGP est également utilisé entre les ISPs et leurs clients privés plus importants pour échanger des informations de routage.
+
+<figure><img src="./image-12.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-13.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-14.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-15.png"><figcaption></figcaption></figure>
+
+# Processus de communication TCP/IP
+
+<figure><img src="./image-11.png"><figcaption></figcaption></figure>
+
+Pour decapsuler le client va dans l'ordre inverse, d'abord Ethernet, IP, TCP et pour finir Donnees
+
+# Normes ouvertes
+
+Ce sont les regles que tout le monde doit appliquer pour avoir un internet ouvert. Quand on achete un routeur sans fil ils ont tous les protocoles IPv4, IPv6, DHCP, SLAAC, Ethernet et 802.11 Wireless
+
+L'image montre le logo de chaque organisme de normalisation
+
+<figure><img src="./image-16.png"><figcaption></figcaption></figure>
+
+# Normes Internet
+
+<figure><img src="./image-17.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-18.png"><figcaption></figcaption></figure>
+
+<figure><img src="./image-19.png"><figcaption></figcaption></figure>
+
+**REVOIR LES ORGANISMES DE NORMALISATION**
+
+
+# Les modeles en couches
+
+<figure><img src="./image-20.png"><figcaption></figcaption></figure>
+
+# Modele OSI
+
+<figure><img src="./image-21.png"><figcaption></figcaption></figure>
+
+# Modele TCP/IP
+
+Il est utilise comme modele de reference. Il explique aussi les fonctions qui interviennent a chaque couche de protocoles.
+
+<figure><img src="./image-22.png"><figcaption></figcaption></figure>
