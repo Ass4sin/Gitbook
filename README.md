@@ -405,18 +405,66 @@ Les protocoles TCP/IP sont dispo pour les couches application, transport et inte
 
 <figure><img src="./image-10.png"><figcaption></figcaption></figure>
 
-SLAAC - Methode qui permet au peripherique d'avoir son adresse IPv6 sans utiliser un serveur DHCPv6
-SMTP - Protocol de Transfert de Courrier Simple 
-POP3 - Protocole de la Poste v3
-IMAP - Protocole d'Acces aux Messages Internet. 
+**Couche d'application**
 
-ICMPv4 - Protocole de message de contrôle Internet pour IPv4. Fournit un retour d'information d'un hôte de destination à un hôte source sur les erreurs de livraison de paquets.
-• ICMPv6 - ICMP pour IPv6. Fonctionnalité similaire à ICMPv4, mais elle est utilisée pour les paquets IPv6.
-• ICMPv6 ND - Détection de voisin ICMPv6. Inclut quatre messages de protocole utilisés pour la résolution d'adresses et la détection d'adresses en double.
+Nom du systeme
+    DNS - Systeme de noms de domaine, traduits les noms de domaine comme google.com en adresse ip
 
-• OSPF - Ouvrez d'abord le chemin le plus court. Protocole de routage d'état de liaison qui utilise une conception hiérarchique basée sur des zones. Il s'agit d'un protocole de routage interne standard ouvert.
-• EIGRP - Protocole de routage amélioré des passerelles intérieures. Protocole de routage propriétaire de Cisco qui utilise une métrique composite basée sur la largeur de bande, le délai, la charge et la fiabilité.
-• BGP - Protocole de passerelle frontalière. Un protocole de routage de passerelle extérieure standard ouvert utilisé entre les fournisseurs de services Internet (ISPs). Le protocole BGP est également utilisé entre les ISPs et leurs clients privés plus importants pour échanger des informations de routage.
+Config. hote
+    SLAAC - Methode qui permet au peripherique d'avoir son adresse IPv6 sans utiliser un serveur DHCPv6
+    SMTP - Protocol de Transfert de Courrier Simple 
+    POP3 - Protocole de la Poste v3
+    IMAP - Protocole d'Acces aux Messages Internet. 
+
+E-mail
+    SMTP - Simple Mail Transfer Protocol
+    POP3 - Protocole de la Poste v3
+    IMAP - Internet Message Access Protocol
+
+Transfer de fichiers
+    FTP
+    SFTP
+    TFPT - Protocol de Transfer de Fichiers Trivial
+
+Web et Service Web
+    HTTP
+    HTTPS
+    REST
+
+**Couche Transport**
+
+Connexion Oriente
+    TCP
+
+Sans connexion
+    UDP
+
+**Couche Internet**
+
+Le Protocol Internet
+    IPv4
+    IPv6
+    NAT - Netword Adress Translation
+
+Envoie de Message
+    ICMPv4 - Protocole de message de contrôle Internet pour IPv4. Fournit un retour d'information d'un hôte de destination à un hôte source sur les erreurs de livraison de paquets.
+    • ICMPv6 - ICMP pour IPv6. Fonctionnalité similaire à ICMPv4, mais elle est utilisée pour les paquets IPv6.
+    • ICMPv6 ND - Détection de voisin ICMPv6. Inclut quatre messages de protocole utilisés pour la résolution d'adresses et la détection d'adresses en double.
+
+Protocoles de Routage
+    • OSPF - Ouvrez d'abord le chemin le plus court. Protocole de routage d'état de liaison qui utilise une conception hiérarchique basée sur des zones. Il s'agit d'un protocole de routage interne standard ouvert.
+     EIGRP - Protocole de routage amélioré des passerelles intérieures. Protocole de routage propriétaire de Cisco qui utilise une métrique composite basée sur la largeur de bande, le délai, la charge et la fiabilité.
+    • BGP - Protocole de passerelle frontalière. Un protocole de routage de passerelle extérieure standard ouvert utilisé entre les fournisseurs de services Internet (ISPs). Le protocole BGP est également utilisé entre les ISPs et leurs clients privés plus importants pour échanger des informations de routage.
+
+**Couche acces reseau**
+
+Resolution d'adresse
+    ARP - Protocole des Resolution des Adresses. Fournit un mappage d'adresse dynamique entre une adresse IPv4 et une adresse physique.
+
+Protocoles de Liaisons de donnees
+    Ethernet - Definit les regles relatives aux normes de cablages et de signalisation de la couche d'acces au reseau
+    WLAN - Reseau local sans fil. Definit les regles de signalisation sans fil sur les frequences radio 2,4 GHz et 5 GHz
+
 
 <figure><img src="./image-12.png"><figcaption></figcaption></figure>
 
@@ -464,3 +512,8 @@ L'image montre le logo de chaque organisme de normalisation
 Il est utilise comme modele de reference. Il explique aussi les fonctions qui interviennent a chaque couche de protocoles.
 
 <figure><img src="./image-22.png"><figcaption></figcaption></figure>
+
+# Les differences
+
+<figure><img src="./image-23.png"><figcaption></figcaption></figure>
+
